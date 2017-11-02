@@ -1,17 +1,17 @@
 arthur@arthur-machine:~/Programs/Projects/spfs-test$ sudo python Switcher/switcher-core/switch.py TestA TestB
-spfs-manager(7754): INFO   : working directory: ./work-dir
-spfs-manager(7754): INFO   : socket path: ./control.sock
-spfs-manager(7754): INFO   : log path wasn't provided: using ./work-dir/./log-dir/spfs-manager.log
-spfs-manager(7754): DEBUG  : Log fd: 3
-Tue Oct 31 2017 16:58:53.939926  spfs-manager(7754): INFO   : Log level set to 7
-arthur@arthur-machine:~/Programs/Projects/spfs-test$ cd work-dir/log-dir
-arthur@arthur-machine:~/Programs/Projects/spfs-test/work-dir/log-dir$ ls
-spfs-manager.log
-arthur@arthur-machine:~/Programs/Projects/spfs-test/work-dir/log-dir$ vim spfs-manager.log
-arthur@arthur-machine:~/Programs/Projects/spfs-test/work-dir/log-dir$ cd ../..
-arthur@arthur-machine:~/Programs/Projects/spfs-test$ ls
-Switcher  test  TestA  TestB  TestInterface.c  work-dir
-arthur@arthur-machine:~/Programs/Projects/spfs-test$ ls work-dir
-control.sock  log-dir  TestA
-arthur@arthur-machine:~/Programs/Projects/spfs-test$ 
+spfs-manager(8756): INFO   : working directory: /home/arthur/Programs/Projects/spfs-test/work-dir
+spfs-manager(8756): INFO   : socket path: ./control.sock
+spfs-manager(8756): INFO   : log path wasn't provided: using /home/arthur/Programs/Projects/spfs-test/work-dir/./log-dir/spfs-manager.log
+spfs-manager(8756): DEBUG  : Log fd: 3
+Thu Nov  2 2017 13:56:22.770066  spfs-manager(8756): INFO   : Log level set to 7
+spfs(8758): DEBUG  : copy fuse option: -f
+spfs(8758): DEBUG  : copy fuse option: -o
+spfs(8758): DEBUG  : copy fuse option: no_remote_lock
+spfs(8758): DEBUG  : copy fuse option: -o
+spfs(8758): DEBUG  : copy fuse option: nonempty
+spfs(8758): DEBUG  : copy fuse option: -o
+spfs(8758): DEBUG  : copy fuse option: intr
+spfs(8758): DEBUG  : copy fuse option: /home/arthur/Programs/Projects/spfs-test/mount-dir
+spfs(8758): DEBUG  : fuse: opening log ./log-dir/spfs-0.log
+spfs(8758): DEBUG  : Log fd: 3
 

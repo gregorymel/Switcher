@@ -25,7 +25,7 @@ class Manager:
                 "-vvvv",
                 "-d",
                 "--socket-path", socket_path,
-                "--work-dir",    Manager.work_dir,
+                "--work-dir",    os.path.abspath(Manager.work_dir),
                 "--log-dir",     Manager.log_dir,
                 "--exit-with-spfs"
             ])

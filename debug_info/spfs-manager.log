@@ -1,19 +1,18 @@
-Tue Oct 31 2017 16:58:53.939964  spfs-manager(7754): INFO   : Log file initialized. Verbosity level: 4
-Tue Oct 31 2017 16:58:53.939987  spfs-manager(7754): DEBUG  : creating SOCK_SEQPACKET socket: ./control.sock
-Tue Oct 31 2017 16:58:53.940016  spfs-manager(7754): DEBUG  : Socket was moved to fd: 4
-Tue Oct 31 2017 16:58:53.940058  spfs-manager(7754): INFO   : listening to ./control.sock
-Tue Oct 31 2017 16:58:53.940280  spfs-manager(7755): INFO   : unreliable_socket_loop: socket loop started
-Tue Oct 31 2017 16:58:53.940406  spfs-manager(7755): DEBUG  : unreliable_socket_loop: accepted new socket
-Tue Oct 31 2017 16:58:53.940451  spfs-manager(7755): DEBUG  : received 62 bytes
-Tue Oct 31 2017 16:58:53.940467  spfs-manager(7755): DEBUG  : received request: "mount"
-Tue Oct 31 2017 16:58:53.940473  spfs-manager(7755): DEBUG  :     options: mountpoint=./mount-dir;mode=proxy;proxy_dir=TestA;id=0;
-Tue Oct 31 2017 16:58:53.940497  spfs-manager(7755): DEBUG  : added mount path ./mount-dir to spfs info 0
-Tue Oct 31 2017 16:58:53.940754  spfs-manager(7756): ERR    : failed to chdir to ./work-dir
-: No such file or directory
-spfs-manager(7755): DEBUG  : 7756 exited, status=254
-Tue Oct 31 2017 16:58:53.942720  spfs-manager(7755): ERR    : Wait for 7756 failed: No child processes
-Tue Oct 31 2017 16:58:53.942744  spfs-manager(7755): ERR    : 7756 exited unexpectedly
-Tue Oct 31 2017 16:58:53.942764  spfs-manager(7755): ERR    : failed to unmount spfs 0 (./mount-dir): No such file or directory
-Tue Oct 31 2017 16:58:53.942782  spfs-manager(7755): ERR    : failed to chdir to ./work-dir
-: No such file or directory
-Tue Oct 31 2017 16:58:53.942798  spfs-manager(7755): ERR    : failed to mount spfs to ./mount-dir
+Thu Nov  2 2017 13:56:22.770121  spfs-manager(8756): INFO   : Log file initialized. Verbosity level: 4
+Thu Nov  2 2017 13:56:22.770154  spfs-manager(8756): DEBUG  : creating SOCK_SEQPACKET socket: ./control.sock
+Thu Nov  2 2017 13:56:22.770175  spfs-manager(8756): DEBUG  : Socket was moved to fd: 4
+Thu Nov  2 2017 13:56:22.770216  spfs-manager(8756): INFO   : listening to ./control.sock
+Thu Nov  2 2017 13:56:22.770436  spfs-manager(8757): INFO   : unreliable_socket_loop: socket loop started
+Thu Nov  2 2017 13:56:22.770570  spfs-manager(8757): DEBUG  : unreliable_socket_loop: accepted new socket
+Thu Nov  2 2017 13:56:22.770674  spfs-manager(8757): DEBUG  : received 142 bytes
+Thu Nov  2 2017 13:56:22.770693  spfs-manager(8757): DEBUG  : received request: "mount"
+Thu Nov  2 2017 13:56:22.770725  spfs-manager(8757): DEBUG  :     options: mountpoint=/home/arthur/Programs/Projects/spfs-test/mount-dir;mode=proxy;proxy_dir=/home/arthur/Programs/Projects/spfs-test/TestA;id=0;
+Thu Nov  2 2017 13:56:22.770795  spfs-manager(8757): DEBUG  : added mount path /home/arthur/Programs/Projects/spfs-test/mount-dir to spfs info 0
+Thu Nov  2 2017 13:56:22.771181  spfs-manager(8758): INFO   : Executing: spfs -vv -f --single-user -o no_remote_lock -o nonempty -o intr --mode proxy --socket-path /home/arthur/Programs/Projects/spfs-test/work-dir/spfs-0.sock --ready-fd 12 --log ./log-dir/spfs-0.log /home/arthur/Programs/Projects/spfs-test/mount-dir --proxy-dir /home/arthur/Programs/Projects/spfs-test/TestA 
+Thu Nov  2 2017 13:56:22.772523  spfs-manager(8757): INFO   : mount_spfs: spfs on /home/arthur/Programs/Projects/spfs-test/mount-dir with pid 8758 started successfully
+Thu Nov  2 2017 13:56:22.772562  spfs-manager(8757): DEBUG  : creating SOCK_SEQPACKET socket: spfs-0.sock
+spfs-manager(8757): DEBUG  : 8758 exited, status=255
+Thu Nov  2 2017 13:56:22.772580  spfs-manager(8757): DEBUG  : Socket was moved to fd: 11
+Thu Nov  2 2017 13:56:22.772633  spfs-manager(8757): INFO   : connected to spfs-0.sock
+Thu Nov  2 2017 13:56:22.773448  spfs-manager(8757): INFO   : added info with id 0
+Thu Nov  2 2017 13:56:22.775348  spfs-manager(8757): DEBUG  : unreliable_conn_handler: peer was closed

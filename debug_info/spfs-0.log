@@ -1,0 +1,3 @@
+Thu Nov  2 2017 13:56:22.772348  spfs(8758): ERR    : failed to bind socket to /home/arthur/Programs/Projects/spfs-test/work-dir/spfs-0.sock: Address already in use
+Thu Nov  2 2017 13:56:22.772382  spfs(8758): ERR    : failed to create socket interface
+Thu Nov  2 2017 13:56:22.772395  spfs(8758): CRIT   : failed to create gateway ctx
